@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Love Letter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000000 !important;
+            font-family: 'Georgia', serif;
+            min-height: 100vh;
+            overflow-x: hidden;
+            padding: 30px;
+        }
+
+        .rgb-border {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border: 4px solid transparent;
+            background: linear-gradient(#000, #000) padding-box,
+                linear-gradient(45deg, #ff1493, #ff69b4, #ff00ff, #00ff88, #ff1493) border-box;
+            background-size: 400% 400%;
+            animation: rgbShift 4s ease infinite;
+            z-index: 1;
+            border-radius: 30px;
+        }
+
+        @keyframes rgbShift {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 20;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 52px;
+            background: linear-gradient(45deg, #ff1493, #ff69b4, #ff00ff, #00ff88, #ff1493);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* text-fill-color: transparent; */
+            text-shadow: 0 0 50px #ff1493;
+            margin-bottom: 40px;
+            animation: titleRainbow 3s ease infinite, heartBeat 2s ease-in-out infinite;
+            font-weight: bold;
+        }
+
+        @keyframes titleRainbow {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        @keyframes heartBeat {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .love-letter-box {
+            background: rgba(0, 0, 0, 0.8);
+            border: 4px solid rgba(255, 20, 147, 0.6);
+            border-radius: 40px;
+            padding: 60px;
+            margin: 40px 0;
+            backdrop-filter: blur(30px);
+            box-shadow: 0 30px 100px rgba(255, 20, 147, 0.4);
+            position: relative;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .love-letter-box::before {
+            content: '💌';
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 48px;
+            animation: float 3s ease-in-out infinite;
+            text-shadow: 0 0 30px #ff1493;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateX(-50%) translateY(0);
+            }
+
+            50% {
+                transform: translateX(-50%) translateY(-20px);
+            }
+        }
+
+        .love-letter-text {
+            font-size: 28px;
+            line-height: 1.8;
+            max-width: 700px;
+            margin: 0 auto;
+            background: linear-gradient(45deg, #ff1493, #ff69b4, #ff00ff, #00ff88, #ffff00, #ff1493);
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* text-fill-color: transparent; */
+            animation: letterRainbow 4s ease-in-out infinite;
+            text-shadow: 0 0 25px rgba(255, 20, 147, 0.8);
+            white-space: pre-line;
+            font-style: italic;
+        }
+
+        @keyframes letterRainbow {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            25% {
+                background-position: 100% 0%;
+            }
+
+            50% {
+                background-position: 100% 100%;
+            }
+
+            75% {
+                background-position: 0% 100%;
+            }
+        }
+
+        .nav-buttons {
+            margin: 60px 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 22px 50px;
+            background: rgba(255, 20, 147, 0.25);
+            color: #ff1493 !important;
+            text-decoration: none;
+            border: 4px solid rgba(255, 20, 147, 0.7);
+            border-radius: 45px;
+            font-size: 24px;
+            font-weight: bold;
+            backdrop-filter: blur(25px);
+            transition: all 0.4s ease;
+            text-shadow: 0 0 20px #ff1493;
+            position: relative;
+            z-index: 20;
+        }
+
+        .nav-btn:hover,
+        .nav-btn:active {
+            background: rgba(255, 20, 147, 0.6);
+            transform: scale(1.15);
+            box-shadow: 0 25px 70px rgba(255, 20, 147, 0.7);
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rgb-border"></div>
+    <div class="container">
+        <h1>💕 My Love Letter 💕</h1>
+
+        <div class="love-letter-box">
+            <div class="love-letter-text">
+                To my Dear Vaishnavi,
+                Today is 21 jan 2026 today we completed 3 years of togetherness. I still remember the first time we met
+                like it was yesterday.
+                from that moment onwards my life has been filled with joy and love because of you. Your smile lights up
+                my world, and your presence makes everything better.
+                I Remember we are just friend you ask me what are your problems why are you sad everytime.frankly
+                speaking I really dont know my own answer.
+                i remember We fight we solve i made you cry so many time i am so sorry for that but i know you just dont
+                want to lose that why you are so possessive about me.
+                You dont want me to talk with other girls because you fear of losing me but you know that i am always
+                with you till the end of my life no one can separate us.
+                You are my first priority my last priority and my only priority in my life.I promise I will always be
+                with you in every situation in your life.
+
+
+                Forever yours,
+                Shrived AkA Loving husband 
+                💖💖💖
+                -
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="other.html" class="nav-btn">← Our Memories</a>
+            <a href="index.html" class="nav-btn">💖 Hearts Home</a>
+        </div>
+    </div>
+</body>
+
+</html>
