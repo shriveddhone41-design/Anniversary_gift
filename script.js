@@ -6,7 +6,7 @@ var settings = {
 
     duration: 4,
 
-    velocity: 90,
+    velocity: 80,
 
     effect: -1.3,
 
